@@ -3,7 +3,7 @@
     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#basicModal">Add New Book</button>
   </div>
   <div class="row gx-5 gy-5">
-    <div class="col-4" *ngFor="let book of books">
+    <div class="col-lg-6 col-xl-4" *ngFor="let book of books">
       <app-book-card [book]="book" (bookEmitter)="onToggle($event)" (refreshEmitter)="onRefresh()">
       </app-book-card>
 
