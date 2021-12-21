@@ -1,0 +1,16 @@
+<div class="card h-100">
+  <div class="card-header">{{message.subject}}</div>
+  <div class="card-body">
+    <p class="card-text">
+      {{message.body}}
+    </p>
+  </div>
+  <div class="card-footer">
+    <div class="d-flex justify-content-end">
+      <span class="mx-2"><i class="fa-star" [ngClass]="{'far': !message.starred, 'fas': message.starred}"></i></span>
+      <span><i class="fa-bookmark" [ngClass]="{'far': !message.read, 'fas': message.read}"></i></span>
+
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="container mt-4">
+  <div class="row gx-5 gy-5">
+    <div class="col-4" *ngFor="let message of messages">
+      <app-message-card [message]="message"></app-message-card>
+    </div>
+  </div>
+</div>

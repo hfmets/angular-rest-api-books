@@ -1,0 +1,24 @@
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title">{{book.title}}</h5>
+    <h6 class="card-subtitle mb-2">{{book.subtitle}}</h6>
+    <p class="card-text">
+      {{book.description}}
+    </p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{book.author}}</li>
+    <li class="list-group-item">{{book.pages}} pages</li>
+    <li class="list-group-item">{{book.price | currency}}</li>
+  </ul>
+  <div class="card-footer">
+    <div class="d-flex justify-content-end">
+      <span class="mx-3">
+        <i class="far fa-edit" data-bs-toggle="modal" data-bs-target="#basicModal2" (click)="toggleModal()"></i>
+      </span>
+      <span>
+        <i class="far fa-trash-alt" (click)="deleteBook(book.id)"></i>
+      </span>
+    </div>
+  </div>
+</div>
